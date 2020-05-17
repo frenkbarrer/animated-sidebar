@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#sidebar {
+    position: fixed;
+    height: 100%;
+    background: #151719;
+    width: 200px;
+    left: -200px;
+    transition: all 500ms linear;
+
+}
+#sidebar ul li {
+    color: rgba(230, 230, 230, .9);
+    text-align: center;
+    border-bottom: 1px solid rgba(100, 100, 100, .3);
+    padding: 10px 15px;
+}
+.logo {
+    border-radius: 50%; 
+    display: block;
+    margin: auto;
+}
+#sidebar .toggle-htn {
+    position: absolute;
+    left: 230px;
+    top: 20px;
+    cursor: pointer;
+}
+#sidebar .toggle-htn span {
+    display: block;
+    width: 40px;
+    text-align: center;
+    font-size: 30px;
+    border: 1px solid black;
+}
+#sidebar.active {
+    left: 0;
+}
+.general {
+    background: url(logo.jpg) fixed ;
+    
+}
